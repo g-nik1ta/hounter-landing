@@ -1,0 +1,72 @@
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding-right: 80px;
+    margin-top: 40px;
+
+    .logo-wrapper {
+        position: relative;
+
+        span {
+            font-family: "Lexend-Bold";
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #1B1C57;
+            margin-left: 40px;
+        }
+
+        .logo {
+            position: absolute;
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 4px 4px 24px 4px;
+
+            &:first-of-type {
+                top: -4px;
+                background: #4BE4C9;
+                z-index: 2;
+            }
+
+            &:last-of-type {
+                top: -9px;
+                left: -5px;
+                background: #F59E0B;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            width: 100px;
+            height: 34px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 32px;
+            color: #F0F3FD;
+            font-family: "Lexend-Regular";
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: capitalize;
+            margin: 0 12px;
+        }
+
+        button {
+            margin: 0 28px;
+            background-color: #D1FAE5;
+            color: #047857;
+            font-family: "Lexend-Bold";
+        }
+    }
+}

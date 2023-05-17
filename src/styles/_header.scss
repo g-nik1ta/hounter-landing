@@ -1,23 +1,10 @@
-@font-face {
-    font-family: Lexend-Bold;
-    src: url("../fonts/Lexend/Lexend-Bold.ttf");
-}
-
-@font-face {
-    font-family: Lexend-Regular;
-    src: url("../fonts/Lexend/Lexend-Regular.ttf");
-}
-
 header {
     width: 100%;
     display: flex;
+    align-items: center;
 
     .header-title {
-        display: flex;
-        flex-direction: column;
         width: 496px;
-        height: fit-content;
-        margin: auto;
 
         .title {
             font-family: 'Lexend-Bold';
