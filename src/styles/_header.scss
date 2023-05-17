@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Lexend-Bold;
+    src: url("../fonts/Lexend/Lexend-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lexend-Regular;
+    src: url("../fonts/Lexend/Lexend-Regular.ttf");
+}
+
+header {
+    width: 100%;
+    display: flex;
+
+    .header-title {
+        display: flex;
+        flex-direction: column;
+        width: 496px;
+        height: fit-content;
+        margin: auto;
+
+        .title {
+            font-family: 'Lexend-Bold';
+            font-size: 40px;
+            line-height: 50px;
+            text-transform: capitalize;
+            color: #1B1C57;
+
+            span {
+                color: #fff;
+                -webkit-text-stroke: 1px #1B1C57;
+            }
+        }
+
+        p {
+            font-family: 'Lexend-Regular';
+            line-height: 28px;
+            opacity: .75;
+            color: #626687;
+            margin: 24px 0;
+        }
+
+        .our-partner {
+            margin-top: 32px;
+            color: #888B97;
+            line-height: 32px;
+            font-family: 'Lexend-Regular';
+
+            .partners-logo img {
+                margin-right: 32px;
+            }
+        }
+    }
+
+    .house {
+        background-image: url("../assets/header-house.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 720px;
+        height: 720px;
+        border-radius: 0px 0px 0px 80px;
+        margin-left: auto;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 11%;
+            top: 19%;
+        }
+    }
+}
