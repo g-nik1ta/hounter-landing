@@ -15,6 +15,8 @@ const HouseSlider = () => {
         autoplaySpeed: 3000,
         cssEase: 'linear',
         variableWidth: true,
+        arrows: false,
+        draggable: false
     }
 
     const slides = [

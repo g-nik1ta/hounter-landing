@@ -588,6 +588,120 @@ nav .navbar button:hover {
   transform: translate(-50%, -50%);
 }
 
+.see-review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 !important;
+  margin-top: 120px;
+}
+.see-review .head {
+  padding: 0;
+}
+.see-review .head .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.see-review .head .title p {
+  flex-direction: column;
+  margin: 0;
+}
+.see-review .head .title p::before {
+  margin: 0 0 8px;
+}
+.see-review .content {
+  width: 100%;
+  margin-top: 40px;
+}
+.see-review .content .slick-current .item img {
+  opacity: 1;
+}
+.see-review .content .item {
+  margin: 0 28px;
+  display: inline-flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.see-review .content .item img {
+  width: 740px;
+  height: 400px;
+  opacity: 0.7;
+  border-radius: 8px;
+}
+.see-review .content .item .comment-block {
+  width: 612px;
+  min-height: 249px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: -145px;
+  z-index: 1;
+}
+.see-review .content .item .comment-block .title {
+  font-family: "Lexend-Regular";
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #1B1C57;
+}
+.see-review .content .item .comment-block .comment {
+  font-family: "Lexend-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #626687;
+  opacity: 0.75;
+  margin-top: 16px;
+}
+.see-review .content .item .comment-block .owner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.see-review .content .item .comment-block .owner-wrapper .owner {
+  display: flex;
+  align-items: center;
+}
+.see-review .content .item .comment-block .owner-wrapper .owner img {
+  width: 40px;
+  height: 40px;
+  margin-right: 24px;
+}
+.see-review .content .item .comment-block .owner-wrapper .owner .title {
+  font-family: "Lexend-Regular";
+}
+.see-review .content .item .comment-block .owner-wrapper .owner .title h1 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #0E1735;
+}
+.see-review .content .item .comment-block .owner-wrapper .owner .title p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #888B97;
+}
+.see-review .content .item .comment-block .owner-wrapper .grade {
+  display: flex;
+  align-items: center;
+  font-family: "Lexend-Regular";
+  font-size: 20px;
+  line-height: 28px;
+  color: #3C4563;
+}
+.see-review .content .item .comment-block .owner-wrapper .grade::before {
+  content: "";
+  display: block;
+  margin-right: 18px;
+  width: 24px;
+  height: 24px;
+  background: no-repeat center/100% url("../assets/see-review/star.svg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -602,6 +716,7 @@ nav .navbar button:hover {
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {

@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
 import FeaturedHouse from "./components/FeaturedHouse/FeaturedHouse";
 import ReadySell from "./components/ReadySell";
+import SeeReview from "./components/SeeReview";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Header/>
             <FeaturedHouse/>
             <ReadySell/>
+            <SeeReview/>
         </div>
     );
 }

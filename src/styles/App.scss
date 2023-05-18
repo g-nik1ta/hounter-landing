@@ -3,6 +3,7 @@
 @import 'nav';
 @import 'featuredHouse';
 @import 'readySell';
+@import 'seeReview';
 
 * {
     margin: 0;
@@ -18,6 +19,7 @@
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
 }
 ::-webkit-scrollbar-track {
     background-color: #e5e5e5;
