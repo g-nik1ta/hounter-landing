@@ -161,6 +161,12 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer;
+            transition: .15s all linear;
+
+            &:hover {
+                transform: scale(1.05) translate(-45%, -45%);
+            }
         }
     }
 }

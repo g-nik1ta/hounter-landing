@@ -16,7 +16,7 @@ const HouseItem = ({ item }) => {
             </div>
             <div className="owner">
                 <img
-                    src={require(`../../assets/featured-house/slider-items/${item.ownerImg}`)}
+                    src={require(`../../assets/avatars/${item.ownerImg}`)}
                     alt="img"
                 />
                 <div className="title">

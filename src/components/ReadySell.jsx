@@ -25,7 +25,7 @@ const ReadySell = () => {
                 <div className="contact-container">
                     <div className="owner">
                         <img
-                            src={require('../assets/featured-house/slider-items/owner-1.png')}
+                            src={require('../assets/avatars/owner-1.png')}
                             alt="img"
                         />
                         <div className="title">

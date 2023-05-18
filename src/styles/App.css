@@ -6,6 +6,10 @@
   font-family: Lexend-Regular;
   src: url("../fonts/Lexend/Lexend-Regular.ttf");
 }
+@font-face {
+  font-family: Lexend-Light;
+  src: url("../fonts/Lexend/Lexend-Light.ttf");
+}
 header {
   width: 100%;
   display: flex;
@@ -586,6 +590,11 @@ nav .navbar button:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.15s all linear;
+}
+.ready-sell .img-box .play-video:hover {
+  transform: scale(1.05) translate(-45%, -45%);
 }
 
 .see-review {
@@ -593,7 +602,6 @@ nav .navbar button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 !important;
   margin-top: 120px;
 }
 .see-review .head {
@@ -700,6 +708,128 @@ nav .navbar button:hover {
   width: 24px;
   height: 24px;
   background: no-repeat center/100% url("../assets/see-review/star.svg");
+}
+
+.tips-trick {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tips-trick .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tips-trick .head .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 422px;
+  text-align: center;
+}
+.tips-trick .head .title p {
+  flex-direction: column;
+  margin: 0;
+}
+.tips-trick .head .title p::before {
+  margin: 0 0 8px;
+}
+.tips-trick .head button {
+  margin: 24px 0 0;
+}
+.tips-trick .content {
+  width: 100%;
+  margin-top: 42px;
+  display: flex;
+}
+.tips-trick .content .list-items {
+  width: 45%;
+}
+.tips-trick .content .list-items .item,
+.tips-trick .content .item-wrapper .item {
+  display: flex;
+  margin-bottom: 42px;
+}
+.tips-trick .content .list-items .item .item-img,
+.tips-trick .content .item-wrapper .item .item-img {
+  width: 200px;
+  height: 144px;
+  border-radius: 16px;
+  margin-right: 32px;
+}
+.tips-trick .content .list-items .item .info .owner,
+.tips-trick .content .item-wrapper .item .info .owner {
+  display: flex;
+  align-items: center;
+}
+.tips-trick .content .list-items .item .info .owner img,
+.tips-trick .content .item-wrapper .item .info .owner img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+.tips-trick .content .list-items .item .info .owner .name,
+.tips-trick .content .item-wrapper .item .info .owner .name {
+  font-family: "Lexend-Light";
+  font-size: 14px;
+  line-height: 22px;
+  color: #3C4563;
+}
+.tips-trick .content .list-items .item .info .title,
+.tips-trick .content .item-wrapper .item .info .title {
+  margin: 16px 0;
+  font-family: "Lexend-Regular";
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #1B1C57;
+}
+.tips-trick .content .list-items .item .info .time-date,
+.tips-trick .content .item-wrapper .item .info .time-date {
+  font-family: "Lexend-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #888B97;
+  display: flex;
+  align-items: center;
+}
+.tips-trick .content .list-items .item .info .time-date::before,
+.tips-trick .content .item-wrapper .item .info .time-date::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  background: no-repeat center/100% url("../assets/tips-trick/oclock-item.svg");
+}
+.tips-trick .content .item-wrapper {
+  width: 55%;
+  padding-left: 50px;
+}
+.tips-trick .content .item-wrapper .item {
+  display: flex;
+  margin-bottom: 42px;
+  flex-direction: column;
+}
+.tips-trick .content .item-wrapper .item .item-img {
+  width: 560px;
+  height: 280px;
+  margin-bottom: 24px;
+}
+.tips-trick .content .item-wrapper .item .info {
+  padding-right: 120px;
+}
+.tips-trick .content .item-wrapper .item .info .title {
+  font-size: 24px;
+}
+.tips-trick .content .item-wrapper .item .info .subtitle {
+  font-family: "Lexend-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #626687;
+  opacity: 0.75;
+  margin-bottom: 16px;
 }
 
 * {

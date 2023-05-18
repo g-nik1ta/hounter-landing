@@ -21,35 +21,38 @@ const HouseSlider = () => {
 
     const slides = [
         {
+            id: 1,
             width: 328,
             images: [{
-                name: 'Ellipse-1.png',
+                name: 'owner-6.png',
                 left: ''
             },
             {
-                name: 'Ellipse-2.png',
+                name: 'owner-7.png',
                 left: '30px'
             },
             {
-                name: 'Ellipse-3.png',
+                name: 'owner-1.png',
                 left: '60px'
             }],
             title: '1K+ People',
             subtitle: 'Successfully Getting Home',
         },
         {
+            id: 2,
             width: 201,
             images: [{
-                name: 'Ellipse-4.png',
+                name: 'owner-9.png',
                 left: ''
             }],
             title: '56 Houses',
             subtitle: 'Sold Monthly',
         },
         {
+            id: 3,
             width: 298,
             images: [{
-                name: 'Ellipse-5.png',
+                name: 'owner-8.png',
                 left: ''
             }],
             title: '4K+',
@@ -61,7 +64,7 @@ const HouseSlider = () => {
         <Slider {...settings}>
             {slides.map(item =>
                 <div
-                    key={item.title}
+                    key={item.id}
                     style={{ width: item.width }}
                     className="item"
                 >
@@ -69,7 +72,7 @@ const HouseSlider = () => {
                         {item.images.map(img =>
                             <img
                                 key={img.name}
-                                src={require(`../../assets/house-slider/${img.name}`)}
+                                src={require(`../../assets/avatars/${img.name}`)}
                                 alt="img"
                                 style={{ left: img.left }}
                             />
