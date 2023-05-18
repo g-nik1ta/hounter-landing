@@ -1,0 +1,153 @@
+.featured-house {
+    width: 100%;
+    padding: 0 120px !important;
+    margin-top: 120px;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            p {
+                color: #F59E0B;
+                font-family: "Lexend-Regular";
+                font-size: 14px;
+                line-height: 18px;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                margin-left: -40px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 32px;
+                    height: 1px;
+                    background-color: #F59E0B;
+                    margin-right: 8px;
+                }
+            }
+
+            h1 {
+                color: #1B1C57;
+                font-family: "Lexend-Regular";
+                font-size: 32px;
+                line-height: 40px;
+                text-transform: capitalize;
+                margin-top: 12px;
+            }
+        }
+
+        .category {
+            display: flex;
+
+            .item {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 12px 24px;
+                min-width: 135px;
+                height: 52px;
+                border: 1px solid #E0E3EB;
+                border-radius: 32px;
+                color: #888B97;
+                font-size: 18px;
+                line-height: 28px;
+                font-family: "Lexend-Regular";
+                margin: 0 16px;
+                transition: .35s all ease-out;
+
+                &:hover {
+                    background: #e0e2e9;
+                }
+
+                &.active {
+                    background: #D1FAE5;
+                    color: #10B981;
+                    border-width: 0;
+
+                    &:hover {
+                        background: #c2e9d5;
+                    }
+
+                    &::before {
+                        filter: invert(52%) sepia(41%) saturate(3044%) hue-rotate(125deg) brightness(98%) contrast(87%);
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    filter: invert(62%) sepia(15%) saturate(219%) hue-rotate(191deg) brightness(86%) contrast(90%);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin-right: 10px;
+                }
+
+                &:nth-of-type(1)::before {
+                    background-image: url("../assets/featured-house/category/item-1.svg");
+                }
+
+                &:nth-of-type(2)::before {
+                    background-image: url("../assets/featured-house/category/item-2.svg");
+                }
+
+                &:nth-of-type(3)::before {
+                    background-image: url("../assets/featured-house/category/item-3.svg");
+                }
+            }
+        }
+
+        .arrow-box {
+            display: flex;
+            align-items: center;
+
+            button {
+                width: 60px;
+                height: 52px;
+                justify-content: center;
+                transition: .35s all ease-out;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+                    width: 8px;
+                    height: 16px;
+                }
+
+                &:first-of-type {
+                    margin-right: 16px;
+                    background-color: #E0E3EB;
+
+                    &::after {
+                        filter: invert(97%) sepia(60%) saturate(429%) hue-rotate(177deg) brightness(97%) contrast(90%);
+                        transform: rotate(180deg);
+                        background-image: url("../assets/arrow.svg");
+                    }
+
+                    &:hover {
+                        background-color: #d4d7e0;
+                    }
+                }
+
+                &:last-of-type {
+                    &::after {
+                        background-image: url("../assets/arrow.svg");
+                    }
+
+                    &:hover {
+                        background-color: #0d9e6d;
+                    }
+                }
+
+            }
+        }
+    }
+}
