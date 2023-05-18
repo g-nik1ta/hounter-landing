@@ -32,6 +32,18 @@ header .header-title p {
   color: #626687;
   margin: 24px 0;
 }
+header .header-title button::after {
+  content: "";
+  width: 7px;
+  height: 14px;
+  display: block;
+  background-image: url("../assets/arrow.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  transition: 0.2s all ease-in;
+}
 header .header-title .our-partner {
   margin-top: 32px;
   color: #888B97;
@@ -100,6 +112,7 @@ nav .navbar {
   margin-left: auto;
 }
 nav .navbar .item {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,12 +128,21 @@ nav .navbar .item {
   line-height: 18px;
   text-transform: capitalize;
   margin: 0 12px;
+  transition: 0.4s all ease-in-out;
+}
+nav .navbar .item:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 nav .navbar button {
   margin: 0 28px;
   background-color: #D1FAE5;
   color: #047857;
   font-family: "Lexend-Bold";
+  transition: 0.8s all ease-in;
+}
+nav .navbar button:hover {
+  background-color: #047857;
+  color: #D1FAE5;
 }
 
 * {

@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MyButton from './UI/MyButton/MyButton';
+import MySelect from './UI/MySelect/MySelect';
 
 const Nav = () => {
+    const [sort, setSort] = useState('house');
+
+    const sortOptions = [
+        { value: 'house', name: 'House' },
+        { value: 'villa', name: 'Villa' },
+        { value: 'apartement', name: 'Apartement' },
+    ]
+
     return (
         <nav className='row'>
-            <div className="logo-wrapper">
+            <a href='' className="logo-wrapper">
                 <i className='logo'></i>
                 <i className='logo'></i>
                 <span>Hounter</span>
-            </div>
+            </a>
             <div className="navbar">
                 <span className='item'>About Us</span>
                 <span className='item'>Article</span>
-                <span className='item'>Property</span>
+                <MySelect
+                    value={(sortOptions.find(e => e.value === sort)).name}
+                    onChange={selectedSort => setSort(selectedSort)}
+                    options={sortOptions}
+                />
                 <MyButton>Sign Up!</MyButton>
             </div>
         </nav>

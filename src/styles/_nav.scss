@@ -45,6 +45,7 @@ nav {
         margin-left: auto;
 
         .item {
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -60,6 +61,11 @@ nav {
             line-height: 18px;
             text-transform: capitalize;
             margin: 0 12px;
+            transition: .4s all ease-in-out;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.18);
+            }
         }
 
         button {
@@ -67,6 +73,12 @@ nav {
             background-color: #D1FAE5;
             color: #047857;
             font-family: "Lexend-Bold";
+            transition: .8s all ease-in;
+
+            &:hover {
+                background-color: #047857;
+                color: #D1FAE5;
+            }
         }
     }
 }

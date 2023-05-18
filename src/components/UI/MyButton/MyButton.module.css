@@ -11,11 +11,9 @@
     line-height: 22px;
     font-family: "Lexend-Regular";
     margin-left: auto;
-
-    /* transition: 1s all ease-in-out; */
+    transition: .28s all ease-in-out;
 }
 
-/* .myBtn:hover {
-    color: #fff;
-    background-color: #5f6d92;
-} */
+.myBtn:hover {
+    background-color: #0d9e6d;
+}

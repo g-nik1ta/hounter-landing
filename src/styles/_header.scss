@@ -27,6 +27,19 @@ header {
             margin: 24px 0;
         }
 
+        button::after {
+            content: '';
+            width: 7px;
+            height: 14px;
+            display: block;
+            background-image: url("../assets/arrow.svg");
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-left: 8px;
+            transition: .2s all ease-in;
+        }
+
         .our-partner {
             margin-top: 32px;
             color: #888B97;

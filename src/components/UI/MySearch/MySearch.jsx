@@ -14,7 +14,7 @@ const MySearch = () => {
                 placeholder='Search for the location you want!'
                 className={cls.search}
             />
-            <MyButton>Search &gt;</MyButton>
+            <MyButton>Search</MyButton>
         </div>
     )
 }
