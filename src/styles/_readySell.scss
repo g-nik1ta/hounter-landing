@@ -1,0 +1,166 @@
+.ready-sell {
+    width: 100%;
+    display: flex;
+    padding-left: 120px !important;
+    overflow: visible !important;
+
+    .img-box {
+        width: 50%;
+        max-width: 488px;
+    }
+
+    .content {
+        width: 50%;
+
+        .subtitle {
+            max-width: 420px;
+            margin-top: 16px;
+            font-family: "Lexend-Regular";
+            color: #626687;
+            line-height: 28px;
+            opacity: .75;
+        }
+
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+
+            .title {
+                width: 100%;
+                font-family: "Lexend-Regular";
+                line-height: 28px;
+                color: #1B1C57;
+                opacity: 0.75;
+                margin-top: 16px;
+            }
+
+            .item {
+                width: 50%;
+                font-family: "Lexend-Regular";
+                line-height: 20px;
+                text-transform: capitalize;
+                color: #3C4563;
+                margin-top: 22px;
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-right: 20px;
+                }
+
+                &:nth-of-type(1)::before {
+                    background-image: url("../assets/ready-sell/details-icon/bedroom.svg");
+                }
+
+                &:nth-of-type(2)::before {
+                    background-image: url("../assets/ready-sell/details-icon/bathroom.svg");
+                }
+
+                &:nth-of-type(3)::before {
+                    background-image: url("../assets/ready-sell/details-icon/parking.svg");
+                }
+
+                &:nth-of-type(4)::before {
+                    background-image: url("../assets/ready-sell/details-icon/floor.svg");
+                }
+            }
+        }
+
+        hr {
+            width: 440px;
+            border: 1px solid #F0F3FD;
+            margin: 32px 0;
+        }
+
+        .contact-container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .owner {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    margin-right: 24px;
+                }
+
+                .title {
+                    font-family: "Lexend-Regular";
+
+                    h1 {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #0E1735;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #888B97;
+                    }
+                }
+            }
+
+            button::before {
+                content: '';
+                margin-right: 20px;
+                width: 14px;
+                height: 20px;
+                display: block;
+                background: no-repeat center/100% url("../assets/ready-sell/contact.svg");
+            }
+        }
+    }
+
+    .img-box {
+        position: relative;
+
+        img {
+            border-radius: 4px;
+            position: absolute;
+        }
+
+        .house-1 {
+            width: 488px;
+            height: 416px;
+        }
+
+        .house-2 {
+            width: 296px;
+            height: 168px;
+            bottom: -43px;
+            left: -40px;
+        }
+
+        .house-3 {
+            width: 96px;
+            height: 80px;
+            bottom: -43px;
+            right: 124px;
+        }
+
+        .house-4 {
+            width: 96px;
+            height: 80px;
+            bottom: -43px;
+            right: 20px;
+        }
+
+        .play-video {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

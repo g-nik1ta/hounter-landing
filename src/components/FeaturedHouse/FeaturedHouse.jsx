@@ -26,7 +26,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-1.png',
             title: 'Dianne Russell',
             subtitle: 'Manchester, Kentucky',
-            category: 'House'
+            category: 'House',
+            chapter: 'Popular',
         },
         {
             id: 2,
@@ -36,7 +37,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-2.png',
             title: 'Robert Fox',
             subtitle: 'Dr. San Jose, South Dakota',
-            category: 'House'
+            category: 'House',
+            chapter: 'New House',
         },
         {
             id: 3,
@@ -46,7 +48,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-3.png',
             title: 'Ronald Richards',
             subtitle: 'Santa Ana, Illinois',
-            category: 'House'
+            category: 'House',
+            chapter: 'Best Deals',
         },
         {
             id: 4,
@@ -56,7 +59,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-4.png',
             title: 'Jenny Wilson',
             subtitle: 'Preston Rd. Inglewood, Maine 98380',
-            category: 'House'
+            category: 'House',
+            chapter: 'Popular',
         },
         {
             id: 5,
@@ -66,7 +70,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-5.jpg',
             title: 'Emma Davis',
             subtitle: 'Brighton, England',
-            category: 'Villa'
+            category: 'Villa',
+            chapter: '',
         },
         {
             id: 6,
@@ -76,7 +81,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-6.png',
             title: 'Sophia Anderson',
             subtitle: 'Los Angeles, California',
-            category: 'Villa'
+            category: 'Villa',
+            chapter: 'Popular',
         },
         {
             id: 7,
@@ -86,7 +92,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-7.png',
             title: 'Michael Thompson',
             subtitle: 'New York City, New York',
-            category: 'Apartment'
+            category: 'Apartment',
+            chapter: 'Best Deals',
         },
         {
             id: 8,
@@ -96,7 +103,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-8.png',
             title: 'Alexandra Lee',
             subtitle: 'Sydney, Australia',
-            category: 'Apartment'
+            category: 'Apartment',
+            chapter: 'New House',
         },
         {
             id: 9,
@@ -106,7 +114,8 @@ const FeaturedHouse = () => {
             ownerImg: 'owner-6.png',
             title: 'Olivia Parker',
             subtitle: 'Beverly Hills, California',
-            category: 'House'
+            category: 'House',
+            chapter: '',
         },
     ]
 
