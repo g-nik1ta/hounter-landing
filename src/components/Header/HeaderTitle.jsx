@@ -1,5 +1,5 @@
 import React from 'react';
-import MySearch from './UI/MySearch/MySearch';
+import MySearch from '../UI/MySearch/MySearch';
 
 const HeaderTitle = () => {
     return (
@@ -14,10 +14,10 @@ const HeaderTitle = () => {
             <div className="our-partner">
                 Our Partnership
                 <div className='partners-logo'>
-                    <img src={require('../assets/partners_logo_1.png')} alt="img" />
-                    <img src={require('../assets/partners_logo_2.png')} alt="img" />
-                    <img src={require('../assets/partners_logo_3.png')} alt="img" />
-                    <img src={require('../assets/partners_logo_4.png')} alt="img" />
+                    <img src={require('../../assets/partners/partners_logo_1.png')} alt="img" />
+                    <img src={require('../../assets/partners/partners_logo_2.png')} alt="img" />
+                    <img src={require('../../assets/partners/partners_logo_3.png')} alt="img" />
+                    <img src={require('../../assets/partners/partners_logo_4.png')} alt="img" />
                 </div>
             </div>
         </section>
