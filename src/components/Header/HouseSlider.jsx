@@ -17,49 +17,68 @@ const HouseSlider = () => {
         variableWidth: true,
     }
 
+    const slides = [
+        {
+            width: 328,
+            images: [{
+                name: 'Ellipse-1.png',
+                left: ''
+            },
+            {
+                name: 'Ellipse-2.png',
+                left: '30px'
+            },
+            {
+                name: 'Ellipse-3.png',
+                left: '60px'
+            }],
+            title: '1K+ People',
+            subtitle: 'Successfully Getting Home',
+        },
+        {
+            width: 201,
+            images: [{
+                name: 'Ellipse-4.png',
+                left: ''
+            }],
+            title: '56 Houses',
+            subtitle: 'Sold Monthly',
+        },
+        {
+            width: 298,
+            images: [{
+                name: 'Ellipse-5.png',
+                left: ''
+            }],
+            title: '4K+',
+            subtitle: 'People Looking for New Homes',
+        },
+    ]
+
     return (
         <Slider {...settings}>
-            <div style={{ width: 328 }} className='item'>
-                <div className="photos">
-                    <img
-                        src={require("../../assets/house-slider/Ellipse-1.png")}
-                        alt="img"
-                        style={{}}
-                    />
-                    <img
-                        src={require("../../assets/house-slider/Ellipse-2.png")}
-                        alt="img"
-                        style={{left: '30px'}}
-                    />
-                    <img
-                        src={require("../../assets/house-slider/Ellipse-3.png")}
-                        alt="img"
-                        style={{left: '60px'}}
-                    />
+            {slides.map(item =>
+                <div
+                    key={item.title}
+                    style={{ width: item.width }}
+                    className="item"
+                >
+                    <div className="photos">
+                        {item.images.map(img =>
+                            <img
+                                key={img.name}
+                                src={require(`../../assets/house-slider/${img.name}`)}
+                                alt="img"
+                                style={{ left: img.left }}
+                            />
+                        )}
+                    </div>
+                    <div className="title">
+                        <h1>{item.title}</h1>
+                        <p>{item.subtitle}</p>
+                    </div>
                 </div>
-                <div className="title">
-                    <h1>1K+ People</h1>
-                    <p>Successfully Getting Home</p>
-                </div>
-            </div>
-            <div style={{ width: 201 }} className='item'>
-                <div className="photos">
-                    <img src={require("../../assets/house-slider/Ellipse-4.png")} alt="img" />
-                </div>
-                <div className="title">
-                    <h1>56 Houses</h1>
-                    <p>Sold Monthly</p>
-                </div>
-            </div>
-            <div style={{ width: 298 }} className='item'>
-                <div className="photos">
-                    <img src={require("../../assets/house-slider/Ellipse-5.png")} alt="img" />
-                </div>
-                <div className="title">
-                    <h1>4K+</h1>
-                    <p>People Looking for New Homes</p>
-                </div>
-            </div>
+            )}
         </Slider>
     )
 }

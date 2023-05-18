@@ -1,12 +1,13 @@
 .featured-house {
     width: 100%;
-    padding: 0 120px !important;
+    padding-left: 120px !important;
     margin-top: 120px;
 
     .head {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-right: 120px;
 
         .title {
             p {
@@ -43,6 +44,7 @@
             display: flex;
 
             .item {
+                user-select: none;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -65,7 +67,7 @@
                 &.active {
                     background: #D1FAE5;
                     color: #10B981;
-                    border-width: 0;
+                    border-color: transparent;
 
                     &:hover {
                         background: #c2e9d5;
@@ -103,50 +105,128 @@
         }
 
         .arrow-box {
-            display: flex;
-            align-items: center;
+            width: 136px;
+        }
+    }
 
-            button {
-                width: 60px;
-                height: 52px;
-                justify-content: center;
-                transition: .35s all ease-out;
+    .content .item {
+        margin-right: 40px;
+    }
+
+    .content-slider, .content {
+        display: flex;
+        margin-top: 40px;
+        width: calc(100% + 240px);
+
+        .slick-prev,
+        .slick-next {
+            padding: 12px 16px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            left: inherit;
+            width: 60px;
+            height: 52px;
+            right: 436px;
+            top: -74px;
+            border-radius: 32px;
+            transition: .35s all ease-out;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                width: 8px;
+                height: 16px;
+            }
+
+            &:first-of-type {
+                background-color: #E0E3EB;
 
                 &::after {
-                    content: '';
-                    display: block;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: 100%;
-                    width: 8px;
-                    height: 16px;
+                    filter: invert(97%) sepia(60%) saturate(429%) hue-rotate(177deg) brightness(97%) contrast(90%);
+                    transform: rotate(180deg);
+                    background-image: url("../assets/arrow.svg");
                 }
 
-                &:first-of-type {
+                &:hover {
+                    background-color: #d4d7e0;
+                }
+            }
+
+            &:last-of-type {
+                right: 360px;
+                background-color: #10B981;
+
+                &::after {
+                    background-image: url("../assets/arrow.svg");
+                }
+
+                &:hover {
+                    background-color: #0d9e6d;
+                }
+            }
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 340px;
+                height: 382px;
+                border-radius: 24px;
+            }
+
+            .title {
+                font-family: 'Lexend-Regular';
+                line-height: 32px;
+
+                .name {
+                    font-size: 24px;
+                    color: #0E1735;
+                    margin: 24px 0 8px
+                }
+
+                .price {
+                    font-size: 20px;
+                    color: #3C4563;
+                }
+            }
+
+            .owner {
+                display: flex;
+                align-items: center;
+                margin-top: 24px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
                     margin-right: 16px;
-                    background-color: #E0E3EB;
-
-                    &::after {
-                        filter: invert(97%) sepia(60%) saturate(429%) hue-rotate(177deg) brightness(97%) contrast(90%);
-                        transform: rotate(180deg);
-                        background-image: url("../assets/arrow.svg");
-                    }
-
-                    &:hover {
-                        background-color: #d4d7e0;
-                    }
                 }
 
-                &:last-of-type {
-                    &::after {
-                        background-image: url("../assets/arrow.svg");
+                .title {
+                    font-family: "Lexend-Regular";
+
+                    h1 {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #0E1735;
                     }
 
-                    &:hover {
-                        background-color: #0d9e6d;
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #888B97;
                     }
                 }
-
             }
         }
     }
