@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,7 @@ import HouseItem from './HouseItem';
 
 const FeaturedHouse = () => {
     const [category, setCategory] = useState('House');
-    const settings = {
+    const [settings, setSettings] = useState({
         className: 'content-slider',
         dots: true,
         infinite: true,
@@ -15,7 +15,7 @@ const FeaturedHouse = () => {
         slidesToScroll: 1,
         speed: 750,
         cssEase: 'linear',
-    }
+    })
 
     const sliders = [
         {
@@ -123,6 +123,28 @@ const FeaturedHouse = () => {
         setCategory(category);
         toggleActiveClass(e);
     }
+    
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth <= 1280 && window.innerWidth > 860) {
+                setSettings({
+                    ...settings,
+                    slidesToShow: 3,
+                })
+            } else if (window.innerWidth <= 860) {
+                setSettings({
+                    ...settings,
+                    slidesToShow: 2,
+                })
+            } else setSettings({
+                ...settings,
+                slidesToShow: 4,
+            })
+        }
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <section className='row featured-house'>

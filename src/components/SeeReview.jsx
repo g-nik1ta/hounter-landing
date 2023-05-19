@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MyButton from './UI/MyButton/MyButton';
 
 const SeeReview = () => {
-    const settings = {
+    const [settings, setSettings] = useState({
         className: 'content',
         centerMode: true,
         centerPadding: "320px",
@@ -16,7 +15,7 @@ const SeeReview = () => {
         speed: 750,
         cssEase: 'linear',
         arrows: false,
-    }
+    })
 
     const slides = [
         {
@@ -50,6 +49,28 @@ const SeeReview = () => {
             grade: '4.6',
         },
     ]
+
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth >= 1620 && window.innerWidth < 1720) {
+                setSettings({
+                    ...settings,
+                    centerPadding: "370px",
+                })
+            } else if (window.innerWidth >= 1720) {
+                setSettings({
+                    ...settings,
+                    centerPadding: "450px",
+                })
+            } else setSettings({
+                ...settings,
+                centerPadding: "320px",
+            })
+        }
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <section className='see-review'>
