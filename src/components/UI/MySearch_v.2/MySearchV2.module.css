@@ -8,6 +8,7 @@
     background-color: #fff;
     border-radius: 32px;
     border: 1px solid #E0E3EB;
+    position: relative;
 }
 
 .search__container::before {
@@ -39,3 +40,13 @@
 .search::-webkit-search-cancel-button {
     display: none;
 } 
+
+.fieldError {
+    position: absolute;
+    color: #d93025;
+    font-size: 14px;
+    font-family: "Lexend-Regular";
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}

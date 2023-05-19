@@ -3,19 +3,57 @@ import cls from './MySearchV2.module.css';
 import MyButton from '../MyButton/MyButton';
 
 const MySearchV2 = () => {
-    const [searchValue, setSearchValue] = useState('');
+    const [email, setEmail] = useState({
+        value: '',
+        error: false,
+        errorMsg: ''
+    });
+
+    const sendForm = (e) => {
+        e.preventDefault();
+        const emailRegexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email.value.trim().length === 0) {
+            setEmail({
+                ...email,
+                error: true,
+                errorMsg: 'Please enter an email address'
+            })
+            return
+        }
+        if (!(emailRegexp.test(email.value.trim()))) {
+            setEmail({
+                ...email,
+                error: true,
+                errorMsg: 'Please enter a valid email address'
+            })
+            return
+        }
+        console.log(email.value);
+        setEmail({
+            value: '',
+            error: false,
+            errorMsg: ''
+        })
+    }
 
     return (
-        <div className={cls.search__container}>
+        <form className={cls.search__container}>
             <input
                 type="search"
-                value={searchValue}
-                onChange={e => setSearchValue(e.target.value)}
+                value={email.value}
+                onChange={e => setEmail({
+                    ...email,
+                    value: e.target.value
+                })}
                 placeholder='Your email here'
                 className={cls.search}
             />
-            <MyButton>Subsribe Now</MyButton>
-        </div>
+            {
+                email.error &&
+                <span className={cls.fieldError}>{email.errorMsg}</span>
+            }
+            <MyButton onClick={sendForm}>Subsribe Now</MyButton>
+        </form>
     )
 }
 
