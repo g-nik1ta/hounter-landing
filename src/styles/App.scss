@@ -6,6 +6,7 @@
 @import 'seeReview';
 @import 'tipsTrick';
 @import 'subscribe';
+@import 'footer';
 
 * {
     margin: 0;
@@ -42,7 +43,7 @@
     overflow: hidden;
 }
 
-section.row, footer {
+section.row {
     margin-top: 120px;
 }
 

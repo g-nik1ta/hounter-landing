@@ -1,0 +1,31 @@
+.logoWrapper {
+    position: relative;
+}
+
+.logoWrapper span {
+    font-family: "Lexend-Bold";
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #1B1C57;
+    margin-left: 40px;
+}
+
+.logoWrapper .logo {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px 4px 24px 4px;
+}
+
+.logoWrapper .logo:first-of-type {
+    top: -4px;
+    background: #4BE4C9;
+    z-index: 2;
+}
+
+.logoWrapper .logo:last-of-type {
+    top: -9px;
+    left: -5px;
+    background: #F59E0B;
+}

@@ -131,33 +131,7 @@ nav {
   z-index: 1;
   padding-right: 80px;
   margin-top: 40px;
-}
-nav .logo-wrapper {
-  position: relative;
-}
-nav .logo-wrapper span {
-  font-family: "Lexend-Bold";
-  line-height: 20px;
-  text-transform: capitalize;
-  color: #1B1C57;
-  margin-left: 40px;
-}
-nav .logo-wrapper .logo {
-  position: absolute;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px 4px 24px 4px;
-}
-nav .logo-wrapper .logo:first-of-type {
-  top: -4px;
-  background: #4BE4C9;
-  z-index: 2;
-}
-nav .logo-wrapper .logo:last-of-type {
-  top: -9px;
-  left: -5px;
-  background: #F59E0B;
+  overflow: visible !important;
 }
 nav .navbar {
   display: flex;
@@ -908,6 +882,76 @@ nav .navbar button:hover {
   right: 82px;
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px !important;
+}
+footer .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .info-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+footer .content .info-block:not(.bio) .subtitle {
+  line-height: 18px;
+  transition: 0.05s all ease-in-out;
+  cursor: pointer;
+}
+footer .content .info-block:not(.bio) .subtitle:hover {
+  opacity: 1;
+}
+footer .content .info-block .title {
+  font-family: "Lexend-Bold";
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #0E1735;
+}
+footer .content .info-block .subtitle {
+  margin-top: 18px;
+  font-family: "Lexend-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #626687;
+  opacity: 0.75;
+}
+footer .content .info-block .subtitle:first-of-type {
+  margin-top: 24px;
+}
+footer .content .info-block .socials-box {
+  margin-top: 24px;
+}
+footer .content .info-block .socials-box i {
+  display: inline-block;
+  margin-right: 32px;
+  width: 24px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.25s all ease-out;
+}
+footer .content .info-block .socials-box i:hover {
+  transform: scale(1.2);
+}
+footer .content .info-block .socials-box i.facebook {
+  background-image: url("../assets/footer/facebook.svg");
+}
+footer .content .info-block .socials-box i.twitter {
+  background-image: url("../assets/footer/twitter.svg");
+}
+footer .content .info-block .socials-box i.instagram {
+  background-image: url("../assets/footer/instagram.svg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -945,7 +989,7 @@ nav .navbar button:hover {
   overflow: hidden;
 }
 
-section.row, footer {
+section.row {
   margin-top: 120px;
 }
 

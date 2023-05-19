@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MyButton from './UI/MyButton/MyButton';
 import MySelect from './UI/MySelect/MySelect';
+import Logo from './UI/Logo/Logo';
 
 const Nav = () => {
     const [sort, setSort] = useState('house');
@@ -13,11 +14,7 @@ const Nav = () => {
 
     return (
         <nav className='row'>
-            <a href='' className="logo-wrapper">
-                <i className='logo'></i>
-                <i className='logo'></i>
-                <span>Hounter</span>
-            </a>
+            <Logo/>
             <div className="navbar">
                 <span className='item'>About Us</span>
                 <span className='item'>Article</span>

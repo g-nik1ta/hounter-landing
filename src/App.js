@@ -7,6 +7,7 @@ import ReadySell from "./components/ReadySell";
 import SeeReview from "./components/SeeReview";
 import TipsTrick from "./components/TipsTrick";
 import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <SeeReview/>
             <TipsTrick/>
             <Subscribe/>
+            <Footer/>
         </div>
     );
 }
