@@ -1,5 +1,6 @@
 import React from 'react';
-import MyButton from './UI/MyButton/MyButton';
+import MyButton from '../UI/MyButton/MyButton';
+import ImageSlider from './ImageSlider';
 
 const ReadySell = () => {
     return (
@@ -25,7 +26,7 @@ const ReadySell = () => {
                 <div className="contact-container">
                     <div className="owner">
                         <img
-                            src={require('../assets/avatars/owner-1.png')}
+                            src={require('../../assets/avatars/owner-1.png')}
                             alt="img"
                         />
                         <div className="title">
@@ -36,13 +37,7 @@ const ReadySell = () => {
                     <MyButton>Contact Now</MyButton>
                 </div>
             </div>
-            <div className='img-box'>
-                <img className='house-1' src={require("../assets/ready-sell/house-1.png")} alt="img" />
-                <img className='house-2' src={require("../assets/ready-sell/house-2.png")} alt="img" />
-                <img className='house-3' src={require("../assets/ready-sell/house-3.png")} alt="img" />
-                <img className='house-4' src={require("../assets/ready-sell/house-4.png")} alt="img" />
-                <img className='play-video' src={require("../assets/ready-sell/play-video.png")} alt="img" />
-            </div>
+            <ImageSlider/>
         </section>
     )
 }

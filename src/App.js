@@ -3,7 +3,7 @@ import './styles/App.css';
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
 import FeaturedHouse from "./components/FeaturedHouse/FeaturedHouse";
-import ReadySell from "./components/ReadySell";
+import ReadySell from "./components/ReadySell/ReadySell";
 import SeeReview from "./components/SeeReview";
 import TipsTrick from "./components/TipsTrick";
 import Subscribe from "./components/Subscribe";

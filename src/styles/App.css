@@ -431,10 +431,6 @@ nav .navbar button:hover {
   padding-left: 120px !important;
   overflow: visible !important;
 }
-.ready-sell .img-box {
-  width: 50%;
-  max-width: 488px;
-}
 .ready-sell .content {
   width: 50%;
 }
@@ -531,16 +527,26 @@ nav .navbar button:hover {
   display: block;
   background: no-repeat center/100% url("../assets/ready-sell/contact.svg");
 }
+.ready-sell .img-slider {
+  width: 100%;
+}
+.ready-sell .img-slider img {
+  width: 488px;
+  height: 416px;
+}
 .ready-sell .img-box {
+  width: 50%;
+  max-width: 488px;
   position: relative;
 }
-.ready-sell .img-box img {
+.ready-sell .img-box .house {
   border-radius: 4px;
   position: absolute;
 }
 .ready-sell .img-box .house-1 {
   width: 488px;
   height: 416px;
+  display: none;
 }
 .ready-sell .img-box .house-2 {
   width: 296px;
@@ -560,15 +566,15 @@ nav .navbar button:hover {
   bottom: -43px;
   right: 20px;
 }
+.ready-sell .img-box:hover .play-video {
+  display: block;
+}
 .ready-sell .img-box .play-video {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: 0.15s all linear;
-}
-.ready-sell .img-box .play-video:hover {
-  transform: scale(1.05) translate(-45%, -45%);
+  position: absolute;
+  display: none;
 }
 
 .see-review {

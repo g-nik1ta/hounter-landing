@@ -4,11 +4,6 @@
     padding-left: 120px !important;
     overflow: visible !important;
 
-    .img-box {
-        width: 50%;
-        max-width: 488px;
-    }
-
     .content {
         width: 50%;
 
@@ -123,10 +118,21 @@
         }
     }
 
-    .img-box {
-        position: relative;
+    .img-slider {
+        width: 100%;
 
         img {
+            width: 488px;
+            height: 416px;
+        }
+    }
+
+    .img-box {
+        width: 50%;
+        max-width: 488px;
+        position: relative;
+
+        .house {
             border-radius: 4px;
             position: absolute;
         }
@@ -134,6 +140,7 @@
         .house-1 {
             width: 488px;
             height: 416px;
+            display: none;
         }
 
         .house-2 {
@@ -157,16 +164,18 @@
             right: 20px;
         }
 
+        &:hover {
+            .play-video {
+                display: block;
+            }
+        }
+
         .play-video {
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-            transition: .15s all linear;
-
-            &:hover {
-                transform: scale(1.05) translate(-45%, -45%);
-            }
+            transform: translate(-50%, -50%); 
+            position: absolute;
+            display: none; 
         }
     }
 }
