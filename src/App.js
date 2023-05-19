@@ -6,6 +6,7 @@ import FeaturedHouse from "./components/FeaturedHouse/FeaturedHouse";
 import ReadySell from "./components/ReadySell";
 import SeeReview from "./components/SeeReview";
 import TipsTrick from "./components/TipsTrick";
+import Subscribe from "./components/Subscribe";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <ReadySell/>
             <SeeReview/>
             <TipsTrick/>
+            <Subscribe/>
         </div>
     );
 }
