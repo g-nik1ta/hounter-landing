@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hounter-landing/static/css/main.e45a5445.css",
-    "main.js": "/hounter-landing/static/js/main.dc9608b4.js",
+    "main.css": "/hounter-landing/static/css/main.8c845012.css",
+    "main.js": "/hounter-landing/static/js/main.b8fa4cb7.js",
     "static/media/subscribe-bc.svg": "/hounter-landing/static/media/subscribe-bc.1522ffff5007394583e9.svg",
     "static/media/header-house.png": "/hounter-landing/static/media/header-house.afc4ca915102955767fe.png",
     "static/media/house-2.png": "/hounter-landing/static/media/house-2.2a7bb47013e136f1d2c6.png",
@@ -42,11 +42,11 @@
     "static/media/item-3.svg": "/hounter-landing/static/media/item-3.6b9102907753e0716780.svg",
     "index.html": "/hounter-landing/index.html",
     "static/media/facebook.svg": "/hounter-landing/static/media/facebook.5e847a92f644a05db56e.svg",
-    "main.e45a5445.css.map": "/hounter-landing/static/css/main.e45a5445.css.map",
-    "main.dc9608b4.js.map": "/hounter-landing/static/js/main.dc9608b4.js.map"
+    "main.8c845012.css.map": "/hounter-landing/static/css/main.8c845012.css.map",
+    "main.b8fa4cb7.js.map": "/hounter-landing/static/js/main.b8fa4cb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e45a5445.css",
-    "static/js/main.dc9608b4.js"
+    "static/css/main.8c845012.css",
+    "static/js/main.b8fa4cb7.js"
   ]
 }
