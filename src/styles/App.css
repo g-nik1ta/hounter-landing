@@ -592,6 +592,7 @@ nav .navbar button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .see-review .head .title p {
   flex-direction: column;
@@ -1009,6 +1010,13 @@ footer .content .info-block .socials-box i.instagram {
   }
 }
 @media (max-width: 1180px) {
+  .see-review .content .item img {
+    width: 610px;
+    height: 340px;
+  }
+  .see-review .content .item .comment-block {
+    width: 500px;
+  }
   .tips-trick .content .item-wrapper .item .item-img {
     width: 400px;
     height: 200px;
@@ -1037,7 +1045,10 @@ footer .content .info-block .socials-box i.instagram {
   .subscribe .content {
     background-size: cover;
   }
-  .subscribe .content .group-2, .subscribe .content .group-6, .subscribe .content .group-3, .subscribe .content .group-7 {
+  .subscribe .content .group-2,
+  .subscribe .content .group-6,
+  .subscribe .content .group-3,
+  .subscribe .content .group-7 {
     display: none;
   }
   .ready-sell .img-box {
@@ -1139,8 +1150,23 @@ footer .content .info-block .socials-box i.instagram {
     width: 90%;
   }
 }
+@media (max-width: 960px) {
+  .see-review .content .item img {
+    width: 460px;
+    height: 250px;
+  }
+  .see-review .content .item .comment-block {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -170px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 @media (max-width: 860px) {
-  .subscribe .content .group-1, .subscribe .content .group-4, .subscribe .content .group-5, .subscribe .content .group-8 {
+  .subscribe .content .group-1,
+  .subscribe .content .group-4,
+  .subscribe .content .group-5,
+  .subscribe .content .group-8 {
     display: none;
   }
   .featured-house .content-slider .slick-prev {
@@ -1157,7 +1183,29 @@ footer .content .info-block .socials-box i.instagram {
     margin-right: 0;
   }
 }
+@media (max-width: 790px) {
+  .see-review .content .item {
+    padding: 0 20px;
+  }
+  .see-review .content .item img {
+    width: 100%;
+    height: 300px;
+  }
+  .see-review .content .item .comment-block {
+    margin-top: -145px;
+  }
+}
 @media (max-width: 730px) {
+  .featured-house .content-slider .item .chapter, .featured-house .content .item .chapter {
+    left: 27%;
+  }
+  .featured-house .content-slider, .featured-house .content {
+    width: 100% !important;
+  }
+  .featured-house .content-slider .item,
+  .featured-house .content .item {
+    align-items: center;
+  }
   .ready-sell .img-box .house-2,
   .ready-sell .img-box .house-3,
   .ready-sell .img-box .house-4 {
@@ -1221,7 +1269,8 @@ footer .content .info-block .socials-box i.instagram {
     height: 180px;
     margin-bottom: 10px;
   }
-  .tips-trick .content .list-items .item .info .title, .tips-trick .content .item-wrapper .item .info .title {
+  .tips-trick .content .list-items .item .info .title,
+  .tips-trick .content .item-wrapper .item .info .title {
     margin: 6px 0;
   }
   .ready-sell .img-slider img {

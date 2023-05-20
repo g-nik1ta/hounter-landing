@@ -7,6 +7,7 @@ import HouseItem from './HouseItem';
 
 const FeaturedHouse = () => {
     const [category, setCategory] = useState('House');
+    const [slidesAll, setSlidesAll] = useState(4);
     const [settings, setSettings] = useState({
         className: 'content-slider',
         dots: true,
@@ -83,7 +84,7 @@ const FeaturedHouse = () => {
             subtitle: 'Los Angeles, California',
             category: 'Villa',
             chapter: 'Popular',
-        },
+        }, 
         {
             id: 7,
             img: 'item-7.jpg',
@@ -123,7 +124,7 @@ const FeaturedHouse = () => {
         setCategory(category);
         toggleActiveClass(e);
     }
-    
+
     useEffect(() => {
         function handleResize() {
             if (window.innerWidth <= 1280 && window.innerWidth > 860) {
@@ -131,20 +132,36 @@ const FeaturedHouse = () => {
                     ...settings,
                     slidesToShow: 3,
                 })
-            } else if (window.innerWidth <= 860) {
+                setSlidesAll(3);
+            } else if (window.innerWidth <= 860 && window.innerWidth > 730) {
                 setSettings({
                     ...settings,
                     slidesToShow: 2,
                 })
-            } else setSettings({
-                ...settings,
-                slidesToShow: 4,
-            })
+                setSlidesAll(2);
+            } else if (window.innerWidth <= 730) {
+                setSettings({
+                    ...settings,
+                    slidesToShow: 1,
+                })
+                setSlidesAll(1);
+            } else {
+                setSettings({
+                    ...settings,
+                    slidesToShow: 4,
+                })
+                setSlidesAll(4)
+            }
         }
         handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    useEffect(() => {
+        console.log(slidesAll);
+        console.log(getFilterSlides(sliders, category));
+    }, [slidesAll])
 
     return (
         <section className='row featured-house'>
@@ -171,7 +188,7 @@ const FeaturedHouse = () => {
                 </div>
             </div>
             {
-                getFilterSlides(sliders, category).length < 5
+                getFilterSlides(sliders, category).length < slidesAll
                     ?
                     <div className="content">
                         {getFilterSlides(sliders, category).map(item =>

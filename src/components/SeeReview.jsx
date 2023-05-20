@@ -62,6 +62,26 @@ const SeeReview = () => {
                     ...settings,
                     centerPadding: "450px",
                 })
+            } else if (window.innerWidth <= 1400 && window.innerWidth > 1250) {
+                setSettings({
+                    ...settings,
+                    centerPadding: "250px",
+                })
+            } else if (window.innerWidth <= 1250 && window.innerWidth > 1040) {
+                setSettings({
+                    ...settings,
+                    centerPadding: "210px",
+                })
+            } else if (window.innerWidth <= 1040 && window.innerWidth > 790) {
+                setSettings({
+                    ...settings,
+                    centerPadding: "160px",
+                })
+            } else if (window.innerWidth <= 790) {
+                setSettings({
+                    ...settings,
+                    centerMode: false,
+                })
             } else setSettings({
                 ...settings,
                 centerPadding: "320px",
