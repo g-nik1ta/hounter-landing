@@ -158,11 +158,6 @@ const FeaturedHouse = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useEffect(() => {
-        console.log(slidesAll);
-        console.log(getFilterSlides(sliders, category));
-    }, [slidesAll])
-
     return (
         <section className='row featured-house'>
             <div className="head">
