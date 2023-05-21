@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from './MySelect.module.css';
 
-const MySelect = ({ options, value, onChange }) => {
+const MySelect = ({ options, onChange }) => {
     return (
         <div 
             className={cls.select + ' item'}

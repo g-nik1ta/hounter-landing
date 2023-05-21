@@ -9,3 +9,13 @@ export const toggleActiveClass = (e) => {
     });
     e.target.classList.add('active');
 }
+
+export const toggleItemsClass = (itemsWrapper, category) => {
+    itemsWrapper.current.childNodes.forEach(element => {
+        element.id === category
+            ?
+            element.classList.add('active')
+            :
+            element.classList.remove('active');
+    });
+}

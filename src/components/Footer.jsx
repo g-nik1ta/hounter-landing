@@ -1,7 +1,11 @@
 import React from 'react';
 import Logo from './UI/Logo/Logo';
+import { useDispatch } from 'react-redux';
+import { changeCategoryCreator } from '../store/categoryReducer';
 
 const Footer = () => {
+    const dispatch = useDispatch();
+
     return (
         <footer className="row">
             <div className="content">
@@ -16,9 +20,21 @@ const Footer = () => {
                 </div>
                 <div className="info-block">
                     <p className="title">Property</p>
-                    <p className="subtitle">House</p>
-                    <p className="subtitle">Apartment</p>
-                    <p className="subtitle">Villa</p>
+                    <a
+                        href='#featured-house'
+                        className="subtitle"
+                        onClick={() => dispatch(changeCategoryCreator('House'))}
+                    >House</a>
+                    <a
+                        href='#featured-house'
+                        className="subtitle"
+                        onClick={() => dispatch(changeCategoryCreator('Apartment'))}
+                    >Apartment</a>
+                    <a
+                        href='#featured-house'
+                        className="subtitle"
+                        onClick={() => dispatch(changeCategoryCreator('Villa'))}
+                    >Villa</a>
                 </div>
                 <div className="info-block">
                     <p className="title">Article</p>

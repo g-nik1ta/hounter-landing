@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import FeaturedHouse from "./components/FeaturedHouse/FeaturedHouse";
 import ReadySell from "./components/ReadySell/ReadySell";
 import SeeReview from "./components/SeeReview";
-import TipsTrick from "./components/TipsTrick";
+import TipsTrick from "./components/TipsTrick/TipsTrick";
 import Subscribe from "./components/Subscribe";
 import Footer from "./components/Footer";
 
