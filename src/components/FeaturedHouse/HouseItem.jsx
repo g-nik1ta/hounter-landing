@@ -3,7 +3,11 @@ import React from 'react';
 const HouseItem = ({ item }) => {
     return (
         <div className="item">
-            <img src={require(`../../assets/featured-house/slider-items/${item.img}`)} alt="img" />
+            <img
+                src={require(`../../assets/featured-house/slider-items/${item.img}`)}
+                alt="img"
+                className='house-photo'
+            />
             {
                 item.chapter &&
                 <div className={`chapter ${item.chapter.toLowerCase().split(' ').join('-')}`}>

@@ -103,7 +103,11 @@ const SeeReview = () => {
             <Slider {...settings}>
                 {slides.map(item =>
                     <div className="item" key={item.id}>
-                        <img src={require(`../assets/see-review/${item.image}`)} alt="img" />
+                        <img
+                            src={require(`../assets/see-review/${item.image}`)}
+                            alt="img"
+                            className='bc-photo'
+                        />
                         <div className="comment-block">
                             <p className="title">{item.title}</p>
                             <p className="comment">{item.comment}</p>

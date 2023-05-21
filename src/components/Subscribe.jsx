@@ -11,14 +11,14 @@ const Subscribe = () => {
                     </div>
                 </div>
                 <MySearchV2 />
-                <img className='group-1' src={require("../assets/subscribe/item-1.png")} alt="img" />
-                <img className='group-2' src={require("../assets/subscribe/item-2.png")} alt="img" />
-                <img className='group-3' src={require("../assets/subscribe/item-3.png")} alt="img" />
-                <img className='group-4' src={require("../assets/subscribe/item-4.png")} alt="img" />
-                <img className='avatar group-5' src={require("../assets/avatars/owner-1.png")} alt="img" />
-                <img className='avatar group-6' src={require("../assets/avatars/owner-3.png")} alt="img" />
-                <img className='avatar group-7' src={require("../assets/avatars/owner-10.png")} alt="img" />
-                <img className='avatar group-8' src={require("../assets/avatars/owner-13.png")} alt="img" />
+                <img className='icon-1 outer-group' src={require("../assets/subscribe/item-1.png")} alt="img" />
+                <img className='icon-2 inner-group' src={require("../assets/subscribe/item-2.png")} alt="img" />
+                <img className='icon-3 inner-group' src={require("../assets/subscribe/item-3.png")} alt="img" />
+                <img className='icon-4 outer-group' src={require("../assets/subscribe/item-4.png")} alt="img" />
+                <img className='avatar icon-5 outer-group' src={require("../assets/avatars/owner-1.png")} alt="img" />
+                <img className='avatar icon-6 inner-group' src={require("../assets/avatars/owner-3.png")} alt="img" />
+                <img className='avatar icon-7 inner-group' src={require("../assets/avatars/owner-10.png")} alt="img" />
+                <img className='avatar icon-8 outer-group' src={require("../assets/avatars/owner-13.png")} alt="img" />
             </div>
         </section>
     )

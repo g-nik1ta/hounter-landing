@@ -1,12 +1,14 @@
 import React from 'react';
 import HeaderTitle from './HeaderTitle';
-import House from './House';
+import HouseSlider from './HouseSlider';
 
 const Header = () => {
     return (
         <header className='row'>
-            <HeaderTitle/>
-            <House/>
+            <HeaderTitle />
+            <div className='house'>
+                <HouseSlider />
+            </div>
         </header>
     )
 }

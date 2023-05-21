@@ -11,7 +11,7 @@ const HouseSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 1500,
+        speed: 1000,
         autoplaySpeed: 3000,
         cssEase: 'linear',
         variableWidth: true,

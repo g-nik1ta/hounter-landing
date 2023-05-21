@@ -7,7 +7,7 @@ import HouseItem from './HouseItem';
 
 const FeaturedHouse = () => {
     const [category, setCategory] = useState('House');
-    const [slidesAll, setSlidesAll] = useState(4);
+    const [slidesShow, setSlidesShow] = useState(4);
     const [settings, setSettings] = useState({
         className: 'content-slider',
         dots: true,
@@ -16,6 +16,7 @@ const FeaturedHouse = () => {
         slidesToScroll: 1,
         speed: 750,
         cssEase: 'linear',
+        draggable: false,
     })
 
     const sliders = [
@@ -62,7 +63,7 @@ const FeaturedHouse = () => {
             subtitle: 'Preston Rd. Inglewood, Maine 98380',
             category: 'House',
             chapter: 'Popular',
-        },
+        }, 
         {
             id: 5,
             img: 'item-5.jpg',
@@ -132,25 +133,25 @@ const FeaturedHouse = () => {
                     ...settings,
                     slidesToShow: 3,
                 })
-                setSlidesAll(3);
+                setSlidesShow(3);
             } else if (window.innerWidth <= 860 && window.innerWidth > 730) {
                 setSettings({
                     ...settings,
                     slidesToShow: 2,
                 })
-                setSlidesAll(2);
+                setSlidesShow(2);
             } else if (window.innerWidth <= 730) {
                 setSettings({
                     ...settings,
                     slidesToShow: 1,
                 })
-                setSlidesAll(1);
+                setSlidesShow(1);
             } else {
                 setSettings({
                     ...settings,
                     slidesToShow: 4,
                 })
-                setSlidesAll(4)
+                setSlidesShow(4)
             }
         }
         handleResize();
@@ -183,7 +184,7 @@ const FeaturedHouse = () => {
                 </div>
             </div>
             {
-                getFilterSlides(sliders, category).length < slidesAll
+                getFilterSlides(sliders, category).length < slidesShow
                     ?
                     <div className="content">
                         {getFilterSlides(sliders, category).map(item =>
