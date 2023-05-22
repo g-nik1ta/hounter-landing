@@ -423,7 +423,7 @@
             padding: 0 15px;
 
             .item {
-                flex-direction: column;
+                flex-direction: column !important;
                 align-items: center;
 
                 .item-img {

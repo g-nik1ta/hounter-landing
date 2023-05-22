@@ -1263,7 +1263,7 @@ footer .content .info-block .socials-box i.instagram {
     padding: 0 15px;
   }
   .tips-trick .content .item {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
   }
   .tips-trick .content .item .item-img {
